@@ -1,0 +1,54 @@
+Mrz 20, 2014 10:59:35 AM de.ewerkzeug.easytranscript.Core.Easytranscript <init>
+Information: >>> Willkommen bei easytranscript. <<<
+Mrz 20, 2014 10:59:35 AM de.ewerkzeug.easytranscript.Core.Easytranscript <init>
+Information: Revision ist: 21, JVM Bit-Architektur ist: amd64
+Mrz 20, 2014 10:59:35 AM de.ewerkzeug.easytranscript.Core.Easytranscript detectVLC
+Information: VLC Version ist: 2.1.3 Rincewind
+Mrz 20, 2014 10:59:38 AM de.ewerkzeug.easytranscript.IO.Data.Configuration load
+Warnung: Keine Konfigurations-Datei gefunden. Setze auf Default-Werte.
+java.io.FileNotFoundException: conf\config.properties (Das System kann die angegebene Datei nicht finden)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at de.ewerkzeug.easytranscript.IO.Data.Configuration.load(Configuration.java:53)
+	at de.ewerkzeug.easytranscript.Core.Easytranscript.<init>(Easytranscript.java:7751)
+	at de.ewerkzeug.easytranscript.Core.Easytranscript$176.run(Easytranscript.java:7703)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+
+Mrz 20, 2014 10:59:48 AM de.ewerkzeug.easytranscript.IO.Data.RecentUsed load
+Warnung: Recent-Datei konnte nicht gelesen werden.
+java.io.FileNotFoundException: conf\recent.properties (Das System kann die angegebene Datei nicht finden)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at de.ewerkzeug.easytranscript.IO.Data.RecentUsed.load(RecentUsed.java:42)
+	at de.ewerkzeug.easytranscript.Core.Easytranscript.<init>(Easytranscript.java:7754)
+	at de.ewerkzeug.easytranscript.Core.Easytranscript$176.run(Easytranscript.java:7703)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:733)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:703)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+
