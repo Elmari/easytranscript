@@ -804,7 +804,6 @@ public class TranscriptHandler {
 
                     }
 
-                    DocumentListener[] list = ((AbstractDocument) easytranscript.getMainCenterEditorEditorPane().getDocument()).getDocumentListeners();
 
                     //  for (DocumentListener dl : list){
                     //     easytranscript.getMainCenterEditorEditorPane().getDocument().removeDocumentListener(dl);
@@ -812,9 +811,13 @@ public class TranscriptHandler {
                     // if (list.length>2){
                     //     easytranscript.getMainCenterEditorEditorPane().getDocument().removeDocumentListener(list[list.length-1]);
                     // }
+
                     if (!added) {
+                        logger.log(Level.INFO, "Adding textfield listener to editor.");
                         easytranscript.getMainCenterEditorEditorPane().getDocument().addDocumentListener(new TextfieldListener());
                         added = true;
+                    } else {
+                        logger.log(Level.INFO, "Textfield listener already added to editor.");
                     }
                     Suggestions.build(easytranscript.getMainCenterEditorEditorPane().getDocument());
 

@@ -55,7 +55,7 @@ public class TextfieldListener implements DocumentListener {
 
         easytranscript.getMainCenterEditorEditorPane().setCaretPosition(posC);
 */
-     
+
         if (workTime.getRecordingTime() == false && zeitFrame.getZeitActivateCheckbox().isSelected()) {
             workTime.startNewWorkTimeEntry();
 

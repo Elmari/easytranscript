@@ -28,8 +28,10 @@ import static de.ewerkzeug.easytranscript.Core.V.updVersion;
 import de.ewerkzeug.easytranscript.Core.VersionState;
 import static de.ewerkzeug.easytranscript.Tools.Tools.getOS;
 import java.awt.Desktop;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -158,15 +160,24 @@ public class UpdateFrame extends javax.swing.JFrame {
 
         if (updVersion.equals("minor")) {
             try {
-
+                ProcessBuilder builder = null;
                 if (!new File(new File("").getAbsolutePath() + System.getProperty("file.separator") + "easytranscript.exe").exists()) {
-                    Runtime.getRuntime().exec("java -jar updater.jar start " + prop.getProperty("lang") + " " + VersionState.getString(V.UPDATECHANNEL) + " " + VERSION.asInteger());
+                   builder = new ProcessBuilder("java", "-jar", "updater.jar", "start", prop.getProperty("lang"), VersionState.getString(V.UPDATECHANNEL), VERSION.asInteger()+"");
                 } else {
-                 //   Runtime.getRuntime().exec("updater.exe " + prop.getProperty("lang") + " " + VersionState.getString(V.UPDATECHANNEL) + " " + VERSION.asInteger());
-                    ProcessBuilder builder = new ProcessBuilder(new String[] { "cmd.exe", "/C", "updater.exe","start", prop.getProperty("lang"), VersionState.getString(V.UPDATECHANNEL), VERSION.asInteger()+""});
-                    builder.start();
+                    builder = new ProcessBuilder("cmd.exe", "/C", "updater.exe","start", prop.getProperty("lang"), VersionState.getString(V.UPDATECHANNEL), VERSION.asInteger()+"");
                 }
-            } catch (IOException ex) {
+
+                builder.redirectErrorStream(true);
+                Process p = builder.start();
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+                String s = "";
+                while ((s = in.readLine()) != null) {
+                    logger.log(Level.INFO, s);
+                    if (!s.isEmpty()) break;
+                }
+
+            } catch (Exception ex) {
                 logger.log(Level.WARNING, new ErrorReport().show(errors.getString("FailedToStartUpdater")), ex);
 
             }

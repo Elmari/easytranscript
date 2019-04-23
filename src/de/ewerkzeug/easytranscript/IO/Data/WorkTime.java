@@ -18,6 +18,8 @@
 package de.ewerkzeug.easytranscript.IO.Data;
 
 import de.ewerkzeug.easytranscript.Core.ErrorReport;
+import de.ewerkzeug.easytranscript.Core.V;
+
 import static de.ewerkzeug.easytranscript.Core.V.errors;
 import static de.ewerkzeug.easytranscript.Core.V.logger;
 import static de.ewerkzeug.easytranscript.Core.V.messages;
@@ -273,7 +275,8 @@ public class WorkTime extends EasyData {
 
         saveWorkTimeByProjectPath("default");
         recordingTime = true;
-
+        System.out.println();
+        logger.log(Level.INFO, "Started Work time entry.");
     }
 
     /**

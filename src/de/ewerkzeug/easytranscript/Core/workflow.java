@@ -17,34 +17,25 @@
  */
 package de.ewerkzeug.easytranscript.Core;
 
-import static de.ewerkzeug.easytranscript.Core.V.easytranscript;
-import static de.ewerkzeug.easytranscript.Core.V.messages;
-import static de.ewerkzeug.easytranscript.Core.V.news;
-import static de.ewerkzeug.easytranscript.Core.V.opFolder;
-import static de.ewerkzeug.easytranscript.Core.V.projFolder;
-import static de.ewerkzeug.easytranscript.Core.V.prop;
-import static de.ewerkzeug.easytranscript.Core.V.startFrame;
-import static de.ewerkzeug.easytranscript.Core.V.updateFrame;
 import de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler;
-import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
-import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
 import de.ewerkzeug.easytranscript.Tools.lock;
+import org.apache.commons.vfs.*;
+import org.apache.commons.vfs.impl.DefaultFileMonitor;
+
+import javax.swing.*;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import javax.swing.UnsupportedLookAndFeelException;
-import org.apache.commons.vfs.FileChangeEvent;
-import org.apache.commons.vfs.FileListener;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileSystemManager;
-import org.apache.commons.vfs.VFS;
-import org.apache.commons.vfs.impl.DefaultFileMonitor;
+
+import static de.ewerkzeug.easytranscript.Core.V.*;
+import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
+import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
 
 /**
- *
  * @author e-werkzeug <administrator@e-werkzeug.eu>
  */
 public class workflow {
@@ -52,7 +43,8 @@ public class workflow {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
+
 
         String projectToBeLoaded2;
         if (args.length > 0) {
@@ -68,7 +60,7 @@ public class workflow {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -96,45 +88,45 @@ public class workflow {
         /* Create and display the form */
         final String projectToBeLoaded = projectToBeLoaded2;
         java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                easytranscript = new Easytranscript();
-                easytranscript.setVisible(true);
-                prop.applyProperties();
+                                            @Override
+                                            public void run() {
+                                                easytranscript = new Easytranscript();
+                                                easytranscript.setVisible(true);
+                                                prop.applyProperties();
 
-                if (projectToBeLoaded != null) {
-                    if (!projectToBeLoaded.trim().equals("")) {
-                        if (projectToBeLoaded.endsWith(".etp")) {
-                            easytranscript.getStartFrame().setVisible(false);
-                            TranscriptHandler.read(new File(projectToBeLoaded).getAbsolutePath());
-                        } else if (projectToBeLoaded.endsWith(".etm")) {
-                            easytranscript.getStartFrame().setVisible(false);
-                            projFolder.close();
-                            projFolder.load(new File(projectToBeLoaded).getAbsolutePath());
+                                                if (projectToBeLoaded != null) {
+                                                    if (!projectToBeLoaded.trim().equals("")) {
+                                                        if (projectToBeLoaded.endsWith(".etp")) {
+                                                            easytranscript.getStartFrame().setVisible(false);
+                                                            TranscriptHandler.read(new File(projectToBeLoaded).getAbsolutePath());
+                                                        } else if (projectToBeLoaded.endsWith(".etm")) {
+                                                            easytranscript.getStartFrame().setVisible(false);
+                                                            projFolder.close();
+                                                            projFolder.load(new File(projectToBeLoaded).getAbsolutePath());
 
-                        } else {
-                            java.util.logging.Logger.getLogger(Easytranscript.class
-                                    .getName()).log(Level.WARNING, "Couldn't load file, cause it's not an easytranscript file.");
-                        }
-                    }
+                                                        } else {
+                                                            java.util.logging.Logger.getLogger(Easytranscript.class
+                                                                    .getName()).log(Level.WARNING, "Couldn't load file, cause it's not an easytranscript file.");
+                                                        }
+                                                    }
 
-                }
+                                                }
 
-                FileSystemManager manager;
-                try {
-                    manager = VFS.getManager();
-                    FileObject file = manager.resolveFile(opFolder + "carry");
+                                                FileSystemManager manager;
+                                                try {
+                                                    manager = VFS.getManager();
+                                                    FileObject file = manager.resolveFile(opFolder + "carry");
 
-                    DefaultFileMonitor fm = new DefaultFileMonitor(new MyListener());
+                                                    DefaultFileMonitor fm = new DefaultFileMonitor(new MyListener());
 
-                    fm.addFile(file);
-                    fm.start();
-                } catch (FileSystemException ex) {
-                    Logger.getLogger(workflow.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                                                    fm.addFile(file);
+                                                    fm.start();
+                                                } catch (FileSystemException ex) {
+                                                    Logger.getLogger(workflow.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
 
-            }
-        }
+                                            }
+                                        }
         );
 
     }
@@ -152,8 +144,8 @@ public class workflow {
                 if (TranscriptHandler.isUnsaved() == true) {
 
                     Object[] options = {messages.getString("Ja"),
-                        messages.getString("Nein"),
-                        messages.getString("Abbrechen")};
+                            messages.getString("Nein"),
+                            messages.getString("Abbrechen")};
                     n = JOptionPane.showOptionDialog(null,
                             messages.getString("WarningCloseProject"),
                             messages.getString("Frage"),
