@@ -159,13 +159,7 @@ public class Version implements Comparable<Version> {
 
     @Override
     public int compareTo(Version v) {
-        if (v.asInteger() == asInteger()) {
-            return 0;
-        } else if (asInteger() > v.asInteger()) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return Integer.compare(asInteger(), v.asInteger());
 
     }
 

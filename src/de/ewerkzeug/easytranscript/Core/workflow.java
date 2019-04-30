@@ -54,6 +54,8 @@ public class workflow {
      */
     public static void main(String args[]) {
 
+
+
         String projectToBeLoaded2;
         if (args.length > 0) {
             projectToBeLoaded2 = args[0];
@@ -93,12 +95,15 @@ public class workflow {
             return;
         }
 
+
+
         /* Create and display the form */
         final String projectToBeLoaded = projectToBeLoaded2;
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
                 easytranscript = new Easytranscript();
+
                 easytranscript.setVisible(true);
                 prop.applyProperties();
 
@@ -141,15 +146,15 @@ public class workflow {
 
     private static class MyListener implements FileListener {
 
-        public MyListener() {
+        MyListener() {
         }
 
-        public void action() {
+        void action() {
             String path = readFileLineByLine(opFolder + "carry").get(0);
             new File(opFolder + "carry").delete();
             if (path.endsWith(".etp")) {
                 int n;
-                if (TranscriptHandler.isUnsaved() == true) {
+                if (TranscriptHandler.isUnsaved()) {
 
                     Object[] options = {messages.getString("Ja"),
                         messages.getString("Nein"),

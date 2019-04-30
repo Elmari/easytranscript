@@ -7,8 +7,122 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418bcbed-dced-4faa-b4b0-3aaa7589329a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$100.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$100.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$29.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$30.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$31.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$33.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$34.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$35.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$37.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$38.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$38.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$39.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$39.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$40.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$40.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$41.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$41.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$42.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$42.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$43.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$43.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$44.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$44.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$45.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$45.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$46.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$46.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$47.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$47.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$48.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$48.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$49.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$49.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$50.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$50.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$51.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$51.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$52.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$52.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$53.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$53.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$54.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$54.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$55.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$55.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$56.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$56.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$57.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$57.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$58.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$58.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$59.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$59.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$60.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$60.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$61.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$61.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$62.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$62.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$63.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$63.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$64.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$64.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$65.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$65.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$66.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$66.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$67.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$67.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$68.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$68.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$69.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$69.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$70.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$70.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$71.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$71.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$72.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$72.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$73.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$73.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$74.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$74.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$75.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$75.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$76.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$77.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$77.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$78.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$78.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$79.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$79.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$80.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$80.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$81.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$81.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$82.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$82.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$83.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$83.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$84.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$84.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$85.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$85.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$86.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$86.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$87.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$87.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$88.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$88.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$89.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$89.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$90.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$90.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$91.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$91.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$92.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$92.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$93.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$93.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$94.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$94.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$95.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$95.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$96.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$96.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$97.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$97.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$98.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$98.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$99.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$99.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$RecentUsedAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$RecentUsedAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$UpdateTimeWhilePressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript$UpdateTimeWhilePressed.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Easytranscript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/ErrorReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/ErrorReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/V.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Version.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/Version.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow$MyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow$MyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/easytranscript/de/ewerkzeug/easytranscript/Core/workflow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,57 +135,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="3238" column="11" selection-start-line="3238" selection-start-column="11" selection-end-line="3238" selection-end-column="11" />
+            <state relative-caret-position="357">
+              <caret line="3472" column="9" selection-start-line="3472" selection-start-column="9" selection-end-line="3472" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8588#8677#0" expanded="true" />
-                <element signature="e#124899#124900#0" expanded="true" />
-                <element signature="e#124961#124962#0" expanded="true" />
-                <element signature="e#189435#189436#0" expanded="true" />
-                <element signature="e#189542#189543#0" expanded="true" />
-                <element signature="e#189634#189635#0" expanded="true" />
-                <element signature="e#189748#189749#0" expanded="true" />
-                <element signature="e#189822#189823#0" expanded="true" />
-                <element signature="e#189902#189903#0" expanded="true" />
-                <element signature="e#189990#189991#0" expanded="true" />
-                <element signature="e#190087#190088#0" expanded="true" />
-                <element signature="e#190180#190181#0" expanded="true" />
-                <element signature="e#190253#190254#0" expanded="true" />
-                <element signature="e#190356#190357#0" expanded="true" />
-                <element signature="e#190457#190458#0" expanded="true" />
-                <element signature="e#190556#190557#0" expanded="true" />
-                <element signature="e#190645#190646#0" expanded="true" />
-                <element signature="e#190730#190731#0" expanded="true" />
-                <element signature="e#190804#190805#0" expanded="true" />
-                <element signature="e#190879#190880#0" expanded="true" />
-                <element signature="e#190956#190957#0" expanded="true" />
-                <element signature="e#191043#191044#0" expanded="true" />
-                <element signature="e#191119#191120#0" expanded="true" />
-                <element signature="e#191205#191206#0" expanded="true" />
-                <element signature="e#191283#191284#0" expanded="true" />
-                <element signature="e#191384#191385#0" expanded="true" />
-                <element signature="e#191483#191484#0" expanded="true" />
-                <element signature="e#191582#191583#0" expanded="true" />
-                <element signature="e#191653#191654#0" expanded="true" />
-                <element signature="e#191748#191749#0" expanded="true" />
-                <element signature="e#191826#191827#0" expanded="true" />
-                <element signature="e#191955#191956#0" expanded="true" />
-                <element signature="e#192127#192128#0" expanded="true" />
-                <element signature="e#199811#199812#0" expanded="true" />
+                <element signature="e#188483#188484#0" expanded="true" />
+                <element signature="e#188521#188522#0" expanded="true" />
+                <element signature="e#188579#188580#0" expanded="true" />
+                <element signature="e#188628#188629#0" expanded="true" />
+                <element signature="e#188678#188679#0" expanded="true" />
+                <element signature="e#188720#188721#0" expanded="true" />
+                <element signature="e#188783#188784#0" expanded="true" />
+                <element signature="e#188834#188835#0" expanded="true" />
+                <element signature="e#188874#188875#0" expanded="true" />
+                <element signature="e#188908#188909#0" expanded="true" />
+                <element signature="e#188950#188951#0" expanded="true" />
+                <element signature="e#188988#188989#0" expanded="true" />
+                <element signature="e#189034#189035#0" expanded="true" />
+                <element signature="e#189076#189077#0" expanded="true" />
+                <element signature="e#189127#189128#0" expanded="true" />
+                <element signature="e#189173#189174#0" expanded="true" />
+                <element signature="e#189222#189223#0" expanded="true" />
+                <element signature="e#189266#189267#0" expanded="true" />
+                <element signature="e#189304#189305#0" expanded="true" />
+                <element signature="e#189339#189340#0" expanded="true" />
+                <element signature="e#189394#189395#0" expanded="true" />
+                <element signature="e#189442#189443#0" expanded="true" />
+                <element signature="e#189496#189497#0" expanded="true" />
+                <element signature="e#189543#189544#0" expanded="true" />
+                <element signature="e#189596#189597#0" expanded="true" />
+                <element signature="e#189642#189643#0" expanded="true" />
+                <element signature="e#189690#189691#0" expanded="true" />
+                <element signature="e#189731#189732#0" expanded="true" />
+                <element signature="e#189777#189778#0" expanded="true" />
+                <element signature="e#189816#189817#0" expanded="true" />
+                <element signature="e#189856#189857#0" expanded="true" />
+                <element signature="e#189890#189891#0" expanded="true" />
+                <element signature="e#189929#189930#0" expanded="true" />
+                <element signature="e#189965#189966#0" expanded="true" />
+                <element signature="e#190005#190006#0" expanded="true" />
+                <element signature="e#190042#190043#0" expanded="true" />
+                <element signature="e#190089#190090#0" expanded="true" />
+                <element signature="e#190129#190130#0" expanded="true" />
+                <element signature="e#190169#190170#0" expanded="true" />
+                <element signature="e#190205#190206#0" expanded="true" />
+                <element signature="e#190250#190251#0" expanded="true" />
+                <element signature="e#190291#190292#0" expanded="true" />
+                <element signature="e#190332#190333#0" expanded="true" />
+                <element signature="e#190369#190370#0" expanded="true" />
+                <element signature="e#190422#190423#0" expanded="true" />
+                <element signature="e#190470#190471#0" expanded="true" />
+                <element signature="e#190522#190523#0" expanded="true" />
+                <element signature="e#190569#190570#0" expanded="true" />
+                <element signature="e#190621#190622#0" expanded="true" />
+                <element signature="e#190668#190669#0" expanded="true" />
+                <element signature="e#190706#190707#0" expanded="true" />
+                <element signature="e#190739#190740#0" expanded="true" />
+                <element signature="e#190789#190790#0" expanded="true" />
+                <element signature="e#190834#190835#0" expanded="true" />
+                <element signature="e#190875#190876#0" expanded="true" />
+                <element signature="e#190912#190913#0" expanded="true" />
+                <element signature="e#190984#190985#0" expanded="true" />
+                <element signature="e#191041#191042#0" expanded="true" />
+                <element signature="e#191173#191174#0" expanded="true" />
+                <element signature="e#191206#191207#0" expanded="true" />
+                <element signature="e#198845#198846#0" expanded="true" />
+                <element signature="e#198891#198892#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Tools/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -79,17 +212,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="544">
+              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/version.txt">
+        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ConfigFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="6154">
+              <caret line="441" column="57" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="57" />
+              <folding>
+                <element signature="e#92881#92882#0" expanded="true" />
+                <element signature="e#92934#92935#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,51 +234,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
+            <state relative-caret-position="612">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_en.html">
+        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="2193">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_ja.html">
+        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="1105">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_de.html">
+        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/VersionState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_fr.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -180,14 +303,17 @@
         <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ConfigFrame.java" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/IO/Data/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java" />
         <option value="$PROJECT_DIR$/version.txt" />
-        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_en.html" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_ja.html" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_de.html" />
         <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_fr.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java" />
+        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java" />
+        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java" />
+        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java" />
+        <option value="$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java" />
       </list>
     </option>
   </component>
@@ -197,11 +323,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1938" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -209,7 +335,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,19 +351,20 @@
               <item name="easytranscript" type="b2602c69:ProjectViewProjectNode" />
               <item name="easytranscript" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="easytranscript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="easytranscript" type="b2602c69:ProjectViewProjectNode" />
               <item name="easytranscript" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="ewerkzeug" type="462c0819:PsiDirectoryNode" />
+              <item name="easytranscript" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -290,9 +416,10 @@
       </method>
     </configuration>
     <configuration name="workflow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_201" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="de.ewerkzeug.easytranscript.Core.workflow" />
       <module name="easytranscript" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="de.ewerkzeug.easytranscript.Core.*" />
@@ -359,26 +486,29 @@
     <option name="totallyTimeSpent" value="12930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.73547095" visible="true" weight="0.27120823" />
-      <window_info id="Structure" order="1" sideWeight="0.26452905" side_tool="true" visible="true" weight="0.27120823" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7322946" visible="true" weight="0.22080536" />
+      <window_info id="Structure" order="1" sideWeight="0.26770538" side_tool="true" visible="true" weight="0.22080536" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32839838" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15722379" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32839838" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49932885" weight="0.060906515" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,6 +517,8 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,14 +528,7 @@
     <entry file="file://$PROJECT_DIR$/history" />
     <entry file="file://$PROJECT_DIR$/manifest.mf" />
     <entry file="file://$PROJECT_DIR$/out.txt" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -415,24 +540,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/VersionState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -446,13 +557,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13890">
-          <caret line="967" column="18" selection-start-line="967" selection-start-column="18" selection-end-line="967" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Properties.java" />
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Tools/UpdateChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -483,102 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ConfigFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="441" column="57" lean-forward="true" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="57" />
-          <folding>
-            <element signature="e#89971#89972#0" expanded="true" />
-            <element signature="e#90016#90017#0" expanded="true" />
-            <element signature="e#90081#90082#0" expanded="true" />
-            <element signature="e#90139#90140#0" expanded="true" />
-            <element signature="e#90194#90195#0" expanded="true" />
-            <element signature="e#90243#90244#0" expanded="true" />
-            <element signature="e#90294#90295#0" expanded="true" />
-            <element signature="e#90338#90339#0" expanded="true" />
-            <element signature="e#90385#90386#0" expanded="true" />
-            <element signature="e#90425#90426#0" expanded="true" />
-            <element signature="e#90485#90486#0" expanded="true" />
-            <element signature="e#90537#90538#0" expanded="true" />
-            <element signature="e#90592#90593#0" expanded="true" />
-            <element signature="e#90639#90640#0" expanded="true" />
-            <element signature="e#90695#90696#0" expanded="true" />
-            <element signature="e#90744#90745#0" expanded="true" />
-            <element signature="e#90799#90800#0" expanded="true" />
-            <element signature="e#90847#90848#0" expanded="true" />
-            <element signature="e#90911#90912#0" expanded="true" />
-            <element signature="e#90960#90961#0" expanded="true" />
-            <element signature="e#91015#91016#0" expanded="true" />
-            <element signature="e#91063#91064#0" expanded="true" />
-            <element signature="e#91109#91110#0" expanded="true" />
-            <element signature="e#91148#91149#0" expanded="true" />
-            <element signature="e#91196#91197#0" expanded="true" />
-            <element signature="e#91236#91237#0" expanded="true" />
-            <element signature="e#91287#91288#0" expanded="true" />
-            <element signature="e#91331#91332#0" expanded="true" />
-            <element signature="e#91379#91380#0" expanded="true" />
-            <element signature="e#91420#91421#0" expanded="true" />
-            <element signature="e#91473#91474#0" expanded="true" />
-            <element signature="e#91519#91520#0" expanded="true" />
-            <element signature="e#91576#91577#0" expanded="true" />
-            <element signature="e#91626#91627#0" expanded="true" />
-            <element signature="e#91669#91670#0" expanded="true" />
-            <element signature="e#91708#91709#0" expanded="true" />
-            <element signature="e#91758#91759#0" expanded="true" />
-            <element signature="e#91800#91801#0" expanded="true" />
-            <element signature="e#91849#91850#0" expanded="true" />
-            <element signature="e#91890#91891#0" expanded="true" />
-            <element signature="e#91939#91940#0" expanded="true" />
-            <element signature="e#91980#91981#0" expanded="true" />
-            <element signature="e#92029#92030#0" expanded="true" />
-            <element signature="e#92070#92071#0" expanded="true" />
-            <element signature="e#92119#92120#0" expanded="true" />
-            <element signature="e#92160#92161#0" expanded="true" />
-            <element signature="e#92209#92210#0" expanded="true" />
-            <element signature="e#92250#92251#0" expanded="true" />
-            <element signature="e#92299#92300#0" expanded="true" />
-            <element signature="e#92340#92341#0" expanded="true" />
-            <element signature="e#92389#92390#0" expanded="true" />
-            <element signature="e#92430#92431#0" expanded="true" />
-            <element signature="e#92479#92480#0" expanded="true" />
-            <element signature="e#92520#92521#0" expanded="true" />
-            <element signature="e#92569#92570#0" expanded="true" />
-            <element signature="e#92610#92611#0" expanded="true" />
-            <element signature="e#92658#92659#0" expanded="true" />
-            <element signature="e#92702#92703#0" expanded="true" />
-            <element signature="e#92762#92763#0" expanded="true" />
-            <element signature="e#92815#92816#0" expanded="true" />
-            <element signature="e#92878#92879#0" expanded="true" />
-            <element signature="e#92934#92935#0" expanded="true" />
-            <element signature="e#92985#92986#0" expanded="true" />
-            <element signature="e#93029#93030#0" expanded="true" />
-            <element signature="e#93081#93082#0" expanded="true" />
-            <element signature="e#93126#93127#0" expanded="true" />
-            <element signature="e#93187#93188#0" expanded="true" />
-            <element signature="e#93233#93234#0" expanded="true" />
-            <element signature="e#93293#93294#0" expanded="true" />
-            <element signature="e#93346#93347#0" expanded="true" />
-            <element signature="e#93406#93407#0" expanded="true" />
-            <element signature="e#93459#93460#0" expanded="true" />
-            <element signature="e#93514#93515#0" expanded="true" />
-            <element signature="e#93562#93563#0" expanded="true" />
-            <element signature="e#93621#93622#0" expanded="true" />
-            <element signature="e#93673#93674#0" expanded="true" />
-            <element signature="e#93728#93729#0" expanded="true" />
-            <element signature="e#93776#93777#0" expanded="true" />
-            <element signature="e#93835#93836#0" expanded="true" />
-            <element signature="e#93887#93888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ConfigFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -592,47 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java">
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Tools/Tools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="3238" column="11" selection-start-line="3238" selection-start-column="11" selection-end-line="3238" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8588#8677#0" expanded="true" />
-            <element signature="e#124899#124900#0" expanded="true" />
-            <element signature="e#124961#124962#0" expanded="true" />
-            <element signature="e#189435#189436#0" expanded="true" />
-            <element signature="e#189542#189543#0" expanded="true" />
-            <element signature="e#189634#189635#0" expanded="true" />
-            <element signature="e#189748#189749#0" expanded="true" />
-            <element signature="e#189822#189823#0" expanded="true" />
-            <element signature="e#189902#189903#0" expanded="true" />
-            <element signature="e#189990#189991#0" expanded="true" />
-            <element signature="e#190087#190088#0" expanded="true" />
-            <element signature="e#190180#190181#0" expanded="true" />
-            <element signature="e#190253#190254#0" expanded="true" />
-            <element signature="e#190356#190357#0" expanded="true" />
-            <element signature="e#190457#190458#0" expanded="true" />
-            <element signature="e#190556#190557#0" expanded="true" />
-            <element signature="e#190645#190646#0" expanded="true" />
-            <element signature="e#190730#190731#0" expanded="true" />
-            <element signature="e#190804#190805#0" expanded="true" />
-            <element signature="e#190879#190880#0" expanded="true" />
-            <element signature="e#190956#190957#0" expanded="true" />
-            <element signature="e#191043#191044#0" expanded="true" />
-            <element signature="e#191119#191120#0" expanded="true" />
-            <element signature="e#191205#191206#0" expanded="true" />
-            <element signature="e#191283#191284#0" expanded="true" />
-            <element signature="e#191384#191385#0" expanded="true" />
-            <element signature="e#191483#191484#0" expanded="true" />
-            <element signature="e#191582#191583#0" expanded="true" />
-            <element signature="e#191653#191654#0" expanded="true" />
-            <element signature="e#191748#191749#0" expanded="true" />
-            <element signature="e#191826#191827#0" expanded="true" />
-            <element signature="e#191955#191956#0" expanded="true" />
-            <element signature="e#192127#192128#0" expanded="true" />
-            <element signature="e#199811#199812#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -643,57 +615,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Tools/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_en.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="493">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_ja.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="493">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_de.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="493">
           <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/info_fr.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="629">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Bundles/Bundle.properties">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ChangeTranscriptFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Easytranscript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="3472" column="9" selection-start-line="3472" selection-start-column="9" selection-end-line="3472" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#188483#188484#0" expanded="true" />
+            <element signature="e#188521#188522#0" expanded="true" />
+            <element signature="e#188579#188580#0" expanded="true" />
+            <element signature="e#188628#188629#0" expanded="true" />
+            <element signature="e#188678#188679#0" expanded="true" />
+            <element signature="e#188720#188721#0" expanded="true" />
+            <element signature="e#188783#188784#0" expanded="true" />
+            <element signature="e#188834#188835#0" expanded="true" />
+            <element signature="e#188874#188875#0" expanded="true" />
+            <element signature="e#188908#188909#0" expanded="true" />
+            <element signature="e#188950#188951#0" expanded="true" />
+            <element signature="e#188988#188989#0" expanded="true" />
+            <element signature="e#189034#189035#0" expanded="true" />
+            <element signature="e#189076#189077#0" expanded="true" />
+            <element signature="e#189127#189128#0" expanded="true" />
+            <element signature="e#189173#189174#0" expanded="true" />
+            <element signature="e#189222#189223#0" expanded="true" />
+            <element signature="e#189266#189267#0" expanded="true" />
+            <element signature="e#189304#189305#0" expanded="true" />
+            <element signature="e#189339#189340#0" expanded="true" />
+            <element signature="e#189394#189395#0" expanded="true" />
+            <element signature="e#189442#189443#0" expanded="true" />
+            <element signature="e#189496#189497#0" expanded="true" />
+            <element signature="e#189543#189544#0" expanded="true" />
+            <element signature="e#189596#189597#0" expanded="true" />
+            <element signature="e#189642#189643#0" expanded="true" />
+            <element signature="e#189690#189691#0" expanded="true" />
+            <element signature="e#189731#189732#0" expanded="true" />
+            <element signature="e#189777#189778#0" expanded="true" />
+            <element signature="e#189816#189817#0" expanded="true" />
+            <element signature="e#189856#189857#0" expanded="true" />
+            <element signature="e#189890#189891#0" expanded="true" />
+            <element signature="e#189929#189930#0" expanded="true" />
+            <element signature="e#189965#189966#0" expanded="true" />
+            <element signature="e#190005#190006#0" expanded="true" />
+            <element signature="e#190042#190043#0" expanded="true" />
+            <element signature="e#190089#190090#0" expanded="true" />
+            <element signature="e#190129#190130#0" expanded="true" />
+            <element signature="e#190169#190170#0" expanded="true" />
+            <element signature="e#190205#190206#0" expanded="true" />
+            <element signature="e#190250#190251#0" expanded="true" />
+            <element signature="e#190291#190292#0" expanded="true" />
+            <element signature="e#190332#190333#0" expanded="true" />
+            <element signature="e#190369#190370#0" expanded="true" />
+            <element signature="e#190422#190423#0" expanded="true" />
+            <element signature="e#190470#190471#0" expanded="true" />
+            <element signature="e#190522#190523#0" expanded="true" />
+            <element signature="e#190569#190570#0" expanded="true" />
+            <element signature="e#190621#190622#0" expanded="true" />
+            <element signature="e#190668#190669#0" expanded="true" />
+            <element signature="e#190706#190707#0" expanded="true" />
+            <element signature="e#190739#190740#0" expanded="true" />
+            <element signature="e#190789#190790#0" expanded="true" />
+            <element signature="e#190834#190835#0" expanded="true" />
+            <element signature="e#190875#190876#0" expanded="true" />
+            <element signature="e#190912#190913#0" expanded="true" />
+            <element signature="e#190984#190985#0" expanded="true" />
+            <element signature="e#191041#191042#0" expanded="true" />
+            <element signature="e#191173#191174#0" expanded="true" />
+            <element signature="e#191206#191207#0" expanded="true" />
+            <element signature="e#198845#198846#0" expanded="true" />
+            <element signature="e#198891#198892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/ErrorReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/GUI/Components/ConfigFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6154">
+          <caret line="441" column="57" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="57" />
+          <folding>
+            <element signature="e#92881#92882#0" expanded="true" />
+            <element signature="e#92934#92935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/workflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/ewerkzeug/easytranscript/Core/VersionState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
