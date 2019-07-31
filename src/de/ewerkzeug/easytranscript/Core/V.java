@@ -59,7 +59,7 @@ import javax.swing.undo.UndoManager;
 public class V {
 
     //#####################
-    public static final Version VERSION = new Version("2.51.1 Épice " + VersionState.FINAL);
+    public static final Version VERSION = new Version("2.51.2 Épice " + VersionState.FINAL);
     public static int UPDATECHANNEL = VersionState.getValue(VersionState.FINAL);
     public static String updVersion = "minor";
     //#####################

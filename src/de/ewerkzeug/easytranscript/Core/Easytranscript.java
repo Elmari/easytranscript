@@ -1632,13 +1632,13 @@ public class Easytranscript extends javax.swing.JFrame {
     private void MainToolbarTimeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainToolbarTimeButtonActionPerformed
 
         workTime.applyWorkTime();
-        if (zeitFrame.getZeitHourlyRadiobutton().isSelected()) {
+      /*  if (zeitFrame.getZeitHourlyRadiobutton().isSelected()) {
             zeitFrame.getZeitHourlySpinner().getChangeListeners()[0].stateChanged(null);
         }
         if (zeitFrame.getZeitFixRadiobutton().isSelected()) {
             zeitFrame.getZeitFixSpinner().getChangeListeners()[0].stateChanged(null);
         }
-        zeitFrame.getZeitActivateCheckbox().getActionListeners()[0].actionPerformed(null);
+        zeitFrame.getZeitActivateCheckbox().getActionListeners()[0].actionPerformed(null);*/
         zeitFrame.setVisible(true);
 
 

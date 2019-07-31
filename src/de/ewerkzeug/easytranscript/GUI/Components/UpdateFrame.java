@@ -26,6 +26,9 @@ import static de.ewerkzeug.easytranscript.Core.V.logger;
 import static de.ewerkzeug.easytranscript.Core.V.prop;
 import static de.ewerkzeug.easytranscript.Core.V.updVersion;
 import de.ewerkzeug.easytranscript.Core.VersionState;
+import de.ewerkzeug.easytranscript.Tools.Tools;
+import org.apache.commons.io.FileSystemUtils;
+
 import static de.ewerkzeug.easytranscript.Tools.Tools.getOS;
 import java.awt.Desktop;
 import java.io.BufferedReader;
@@ -161,7 +164,7 @@ public class UpdateFrame extends javax.swing.JFrame {
         if (updVersion.equals("minor")) {
             try {
                 ProcessBuilder builder = null;
-                if (!new File(new File("").getAbsolutePath() + System.getProperty("file.separator") + "easytranscript.exe").exists()) {
+                if (!Tools.getOS().equals("Win")) {
                    builder = new ProcessBuilder("java", "-jar", "updater.jar", "start", prop.getProperty("lang"), VersionState.getString(V.UPDATECHANNEL), VERSION.asInteger()+"");
                 } else {
                     builder = new ProcessBuilder("cmd.exe", "/C", "updater.exe","start", prop.getProperty("lang"), VersionState.getString(V.UPDATECHANNEL), VERSION.asInteger()+"");

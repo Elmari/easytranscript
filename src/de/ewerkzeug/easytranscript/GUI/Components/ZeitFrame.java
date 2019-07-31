@@ -19,11 +19,8 @@ package de.ewerkzeug.easytranscript.GUI.Components;
 
 import de.ewerkzeug.easytranscript.Core.ErrorReport;
 import de.ewerkzeug.easytranscript.Core.V;
-import static de.ewerkzeug.easytranscript.Core.V.currentLocale;
-import static de.ewerkzeug.easytranscript.Core.V.errors;
-import static de.ewerkzeug.easytranscript.Core.V.messages;
-import static de.ewerkzeug.easytranscript.Core.V.workTime;
-import static de.ewerkzeug.easytranscript.Core.V.zeitFrame;
+
+import static de.ewerkzeug.easytranscript.Core.V.*;
 import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transConf;
 import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptName;
 import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
@@ -577,7 +574,7 @@ public class ZeitFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ZeitFixCurrencyComboboxItemStateChanged
 
-    private void ZeitFixRadiobuttonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitFixRadiobuttonStateChanged
+    public void ZeitFixRadiobuttonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitFixRadiobuttonStateChanged
         ZeitHourlyRadiobutton.setSelected(!ZeitFixRadiobutton.isSelected());
         ZeitHourlySpinner.setEnabled(!ZeitFixRadiobutton.isSelected());
         ZeitHourlyCurrencyCombobox.setEnabled(!ZeitFixRadiobutton.isSelected());
@@ -589,7 +586,7 @@ public class ZeitFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ZeitFixRadiobuttonStateChanged
 
-    private void ZeitHourlySpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitHourlySpinnerStateChanged
+    public void ZeitHourlySpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitHourlySpinnerStateChanged
         String s = ZeitTotalLabel.getText();
 
         if (s.contains(",")) {
@@ -615,6 +612,7 @@ public class ZeitFrame extends javax.swing.JFrame {
 
     private void ZeitHourlyCurrencyComboboxItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_ZeitHourlyCurrencyComboboxItemStateChanged
         String s = ZeitTotalLabel.getText();
+        //TODO Zeitlabel stimmt zu anfang nicht
         if (s.contains(",")) {
             String s2;
             String s4;
@@ -632,7 +630,7 @@ public class ZeitFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ZeitHourlyCurrencyComboboxItemStateChanged
 
-    private void ZeitHourlyRadiobuttonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitHourlyRadiobuttonStateChanged
+    public void ZeitHourlyRadiobuttonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_ZeitHourlyRadiobuttonStateChanged
         ZeitFixRadiobutton.setSelected(!ZeitHourlyRadiobutton.isSelected());
         ZeitFixSpinner.setEnabled(!ZeitHourlyRadiobutton.isSelected());
         ZeitFixCurrencyCombobox.setEnabled(!ZeitHourlyRadiobutton.isSelected());

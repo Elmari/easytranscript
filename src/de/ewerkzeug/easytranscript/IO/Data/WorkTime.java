@@ -25,6 +25,8 @@ import static de.ewerkzeug.easytranscript.Core.V.logger;
 import static de.ewerkzeug.easytranscript.Core.V.messages;
 import static de.ewerkzeug.easytranscript.Core.V.zeitFrame;
 import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
+
+import java.awt.event.ItemEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -36,6 +38,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import javax.swing.JOptionPane;
+import javax.swing.event.ChangeEvent;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -547,14 +550,7 @@ public class WorkTime extends EasyData {
 
             zeitFrame.getZeitTableTable().repaint();
 
-            if (zeitFrame.getZeitHourlyRadiobutton().isSelected()) {
-                zeitFrame.getZeitHourlyCurrencyCombobox().getItemListeners()[0].itemStateChanged(null);
-                zeitFrame.getZeitHourlySpinner().getChangeListeners()[0].stateChanged(null);
-            }
-            if (zeitFrame.getZeitFixRadiobutton().isSelected()) {
-                zeitFrame.getZeitFixSpinner().getChangeListeners()[0].stateChanged(null);
-                zeitFrame.getZeitFixCurrencyCombobox().getItemListeners()[0].itemStateChanged(null);
-            }
+
 
             zeitFrame.getZeitTableScrollpane().getVerticalScrollBar().setValue(zeitFrame.getZeitTableScrollpane().getVerticalScrollBar().getMaximum());
             String stundenString = messages.getString("Stunden");
@@ -571,6 +567,14 @@ public class WorkTime extends EasyData {
 
             zeitFrame.getZeitTotalLabel().setText(ergebnisS);
 
+            if (zeitFrame.getZeitHourlyRadiobutton().isSelected()) {
+                zeitFrame.ZeitHourlyRadiobuttonStateChanged(null);
+                //  zeitFrame.getZeitHourlyCurrencyCombobox().getItemListeners()[0].itemStateChanged(new ItemEvent());
+            }
+            if (zeitFrame.getZeitFixRadiobutton().isSelected()) {
+                zeitFrame.ZeitFixRadiobuttonStateChanged(null);
+                //     zeitFrame.getZeitFixCurrencyCombobox().getItemListeners()[0].itemStateChanged(null);
+            }
         }
     }
 
