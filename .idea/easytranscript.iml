@@ -9,7 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Logs" />
       <excludeFolder url="file://$MODULE_DIR$/licenses" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Amazon Corretto 8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="lib" level="project" />
   </component>
