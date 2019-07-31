@@ -89,3 +89,5 @@ nbdist/
 .nb-gradle/
 /launch4j.xml
 /out/
+/Logs/
+

@@ -130,7 +130,7 @@ public class V {
 
     public static final Logger logger = Logger.getLogger(Easytranscript.class.getName());
 
-    public static InfoFrame infoFrame;
+    static InfoFrame infoFrame;
     public static ConfigFrame configFrame;
     public static SearchFrame searchFrame;
     public static ZeitFrame zeitFrame;
@@ -139,12 +139,12 @@ public class V {
     public static StartFrame startFrame;
     public static TunerDialog tunerDialog;
     public static TastenCheckFrame tastenCheckFrame;
-    public static SupportFrame supportFrame;
+    static SupportFrame supportFrame;
     public static InstallationDialog installationDialog;
     public static UpdateFrame updateFrame;
-    public static ImportFrame importFrame;
+    static ImportFrame importFrame;
     public static NewTranscriptFrame newProjectFrame;
     public static ChangeTranscriptFrame changeProjectFrame;
     public static ExportFrame exportFrame;
-    public static Easynews news;
+    static Easynews news;
 }

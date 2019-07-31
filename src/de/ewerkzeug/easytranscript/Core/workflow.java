@@ -17,25 +17,34 @@
  */
 package de.ewerkzeug.easytranscript.Core;
 
+import static de.ewerkzeug.easytranscript.Core.V.easytranscript;
+import static de.ewerkzeug.easytranscript.Core.V.messages;
+import static de.ewerkzeug.easytranscript.Core.V.news;
+import static de.ewerkzeug.easytranscript.Core.V.opFolder;
+import static de.ewerkzeug.easytranscript.Core.V.projFolder;
+import static de.ewerkzeug.easytranscript.Core.V.prop;
+import static de.ewerkzeug.easytranscript.Core.V.startFrame;
+import static de.ewerkzeug.easytranscript.Core.V.updateFrame;
 import de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler;
+import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
+import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
 import de.ewerkzeug.easytranscript.Tools.lock;
-import org.apache.commons.vfs.*;
-import org.apache.commons.vfs.impl.DefaultFileMonitor;
-
-import javax.swing.*;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import static de.ewerkzeug.easytranscript.Core.V.*;
-import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
-import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
+import javax.swing.JOptionPane;
+import javax.swing.UnsupportedLookAndFeelException;
+import org.apache.commons.vfs.FileChangeEvent;
+import org.apache.commons.vfs.FileListener;
+import org.apache.commons.vfs.FileObject;
+import org.apache.commons.vfs.FileSystemException;
+import org.apache.commons.vfs.FileSystemManager;
+import org.apache.commons.vfs.VFS;
+import org.apache.commons.vfs.impl.DefaultFileMonitor;
 
 /**
+ *
  * @author e-werkzeug <administrator@e-werkzeug.eu>
  */
 public class workflow {
@@ -43,8 +52,7 @@ public class workflow {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) throws IOException {
-
+    public static void main(String args[]) {
 
         String projectToBeLoaded2;
         if (args.length > 0) {
@@ -60,7 +68,7 @@ public class workflow {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -133,15 +141,15 @@ public class workflow {
 
     private static class MyListener implements FileListener {
 
-        public MyListener() {
+        MyListener() {
         }
 
-        public void action() {
+        void action() {
             String path = readFileLineByLine(opFolder + "carry").get(0);
             new File(opFolder + "carry").delete();
             if (path.endsWith(".etp")) {
                 int n;
-                if (TranscriptHandler.isUnsaved() == true) {
+                if (TranscriptHandler.isUnsaved()) {
 
                     Object[] options = {messages.getString("Ja"),
                             messages.getString("Nein"),

@@ -96,6 +96,7 @@ import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -158,7 +159,7 @@ import javax.swing.text.rtf.RTFEditorKit;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
 import javax.swing.undo.UndoManager;
-import jxgrabkey.HotkeyConflictException;
+
 import jxgrabkey.JXGrabKey;
 import uk.co.caprica.vlcj.binding.LibVlc;
 import uk.co.caprica.vlcj.discovery.NativeDiscovery;
@@ -168,33 +169,33 @@ import uk.co.caprica.vlcj.version.Version;
 
 public class Easytranscript extends javax.swing.JFrame {
 
-    ImageIcon more = new ImageIcon(Easytranscript.class.getResource("Images/dialog-more.png"));
-    ImageIcon less = new ImageIcon(Easytranscript.class.getResource("Images/dialog-fewer.png"));
-    ImageIcon icon = new ImageIcon(Easytranscript.class.getResource("Images/icon.png"));
-    static jxgrabkey.HotkeyListener jxgrabkeyhotlistener;
+    private ImageIcon more = new ImageIcon(Easytranscript.class.getResource("Images/dialog-more.png"));
+    private ImageIcon less = new ImageIcon(Easytranscript.class.getResource("Images/dialog-fewer.png"));
+    private ImageIcon icon = new ImageIcon(Easytranscript.class.getResource("Images/icon.png"));
+    private static jxgrabkey.HotkeyListener jxgrabkeyhotlistener;
     LibVlc Instance;
 
     private final SimpleAttributeSet attributeBold = new SimpleAttributeSet();
-    private boolean SprecherwechselWechsel = false;
-    private int PointOffsetTextfield;
+    private boolean sprecherwechselWechsel = false;
+    private int pointOffsetTextfield;
 
-    static Handler logHandler;
+    private static Handler logHandler;
     private JFileChooser fileChooser;
 
     private final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 
-    static String[] audioformate = {"wma", "mp3", "ogg", "wav", "m4a", "flac", "aiff"};
-    static String[] videoformate = {"avi", "mp4", "mov", "3gp", "ogm", "mkv", "wmv", "m2ts", "mts"};
-    static String[] audioformateFX = {"mp3", "wav", "m4a", "aiff"};
-    static String[] videoformateFX = {"flv", "mp4", "m4v"};
+    private static String[] audioformate = {"wma", "mp3", "ogg", "wav", "m4a", "flac", "aiff"};
+    private static String[] videoformate = {"avi", "mp4", "mov", "3gp", "ogm", "mkv", "wmv", "m2ts", "mts"};
+    private static String[] audioformateFX = {"mp3", "wav", "m4a", "aiff"};
+    private static String[] videoformateFX = {"flv", "mp4", "m4v"};
     public static String[] formate;
 
-    ArrayList<AttributeSet> attrList = new ArrayList<>();
+    private ArrayList<AttributeSet> attrList = new ArrayList<>();
     public static int SystemWideKeyWasActive = 0;
-    boolean savedState;
+    private boolean savedState;
 
-    java.util.Timer updatetimer = new java.util.Timer();
-    TimerTask task = new UpdateTimeWhilePressed();
+    private java.util.Timer updatetimer = new java.util.Timer();
+    private TimerTask task = new UpdateTimeWhilePressed();
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -474,7 +475,7 @@ public class Easytranscript extends javax.swing.JFrame {
             }
         });
         MainToolbar.add(MainToolbarSaveButton);
-        KeyStroke keySave = KeyStroke.getKeyStroke(KeyEvent.VK_S, Event.CTRL_MASK);
+        KeyStroke keySave = KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_MASK);
         Action performSave = new AbstractAction("Save") {
             public void actionPerformed(ActionEvent e) {
                 de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.save(transcriptPath,false, false);
@@ -1523,7 +1524,7 @@ public class Easytranscript extends javax.swing.JFrame {
     }//GEN-LAST:event_MainToolbarTimestampButtonActionPerformed
 
     private void MainToolbarConfigButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainToolbarConfigButtonActionPerformed
-        if (configFrame.isVisible() == false) {
+        if (!configFrame.isVisible()) {
 
             if (prop.getBoolProperty("ConfigStenoActivate")) {
                 steno.load();
@@ -1552,7 +1553,7 @@ public class Easytranscript extends javax.swing.JFrame {
     private void MainToolbarSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainToolbarSearchButtonActionPerformed
 //        mySD.setVisible(true);
         this.MainCenterEditorEditorPane.requestFocus();
-        if (searchFrame.isVisible() == false) {
+        if (!searchFrame.isVisible()) {
 
             searchFrame.setVisible(true);
             searchFrame.getSearchSearchphraseTextfield().setText("");
@@ -1579,7 +1580,7 @@ public class Easytranscript extends javax.swing.JFrame {
     }//GEN-LAST:event_MainToolbarZoomComboboxActionPerformed
 
     private void MainToolbarFontsizeComboboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainToolbarFontsizeComboboxActionPerformed
-        if (fontsizeHasFocus == true) {
+        if (fontsizeHasFocus) {
             SimpleAttributeSet attrs = new SimpleAttributeSet();
             AttributeSet attr = ((StyledDocument) MainCenterEditorEditorPane.getDocument()).getCharacterElement(MainCenterEditorEditorPane.getSelectionStart()).getAttributes();
 
@@ -1646,22 +1647,22 @@ public class Easytranscript extends javax.swing.JFrame {
 
     private void MainCenterEditorEditorPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MainCenterEditorEditorPaneMouseClicked
 
-        PointOffsetTextfield = MainCenterEditorEditorPane.viewToModel(evt.getPoint());
+        pointOffsetTextfield = MainCenterEditorEditorPane.viewToModel(evt.getPoint());
         try {
-            String abPoint = MainCenterEditorEditorPane.getDocument().getText(PointOffsetTextfield, MainCenterEditorEditorPane.getDocument().getLength() - PointOffsetTextfield);
+            String abPoint = MainCenterEditorEditorPane.getDocument().getText(pointOffsetTextfield, MainCenterEditorEditorPane.getDocument().getLength() - pointOffsetTextfield);
 
             int index = abPoint.indexOf("# ");
 
             if (index < 11 && index > -1) {
 
-                abPoint = MainCenterEditorEditorPane.getDocument().getText(PointOffsetTextfield - (11 - index), 12);
+                abPoint = MainCenterEditorEditorPane.getDocument().getText(pointOffsetTextfield - (11 - index), 12);
                 long Zeitstempel_Stunde = Long.valueOf(abPoint.substring(1, 3)) * 1000 * 60 * 60;
                 long Zeitstempel_Minute = Long.valueOf(abPoint.substring(4, 6)) * 1000 * 60;
                 long Zeitstempel_Sekunde = Long.valueOf(abPoint.substring(7, 9)) * 1000;
                 long Zeitstempel_MilliSek = Long.parseLong(abPoint.substring(10, 11)) * 100;
 
                 if (!useFXPlayer) {
-                    if (player.isMediaLoaded() == true) {
+                    if (player.isMediaLoaded()) {
                         currentPlayerTime = Zeitstempel_Stunde + Zeitstempel_Minute + Zeitstempel_Sekunde + Zeitstempel_MilliSek;
                         player.getMediaPlayer().setTime(currentPlayerTime);
                         player.getMediaPlayer().play();
@@ -1711,7 +1712,7 @@ public class Easytranscript extends javax.swing.JFrame {
     private void MaincreateProjectMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MaincreateProjectMenuItemActionPerformed
         clearProjWindowValues();
         int n;
-        if (TranscriptHandler.isUnsaved() == true) {
+        if (TranscriptHandler.isUnsaved()) {
 
             Object[] options = {messages.getString("Ja"),
                 messages.getString("Nein"),
@@ -1738,7 +1739,7 @@ public class Easytranscript extends javax.swing.JFrame {
         TranscriptHandler.close();
         setTitle("easytranscript");
 
-        if (prop.getBoolProperty("PPinfoskipCb") == true) {
+        if (prop.getBoolProperty("PPinfoskipCb")) {
             newProjectFrame.getNPMainTabbedPane().setSelectedIndex(1);
         }
 
@@ -1847,7 +1848,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
             int n = JOptionPane.showOptionDialog(null,
                     messages.getString("PandocInformation"), messages.getString("PandocInformationTitle"),
-                    JOptionPane.PLAIN_MESSAGE,
+                    JOptionPane.DEFAULT_OPTION,
                     JOptionPane.INFORMATION_MESSAGE,
                     null,
                     options,
@@ -1855,27 +1856,25 @@ public class Easytranscript extends javax.swing.JFrame {
             if (n != 1) {
                 return;
             }
-            if (n == 1) {
 
-                URL url;
-                try {
-                    url = new URL("http://johnmacfarlane.net/pandoc/installing.html");
-                    if (Desktop.isDesktopSupported()) {
-                        try {
-                            Desktop.getDesktop().browse(url.toURI());
+            URL url;
+            try {
+                url = new URL("http://johnmacfarlane.net/pandoc/installing.html");
+                if (Desktop.isDesktopSupported()) {
+                    try {
+                        Desktop.getDesktop().browse(url.toURI());
 
-                        } catch (IOException | URISyntaxException e) {
-                            logger.log(Level.SEVERE, new ErrorReport().show(errors.getString("errorOpeningLink")), e);
+                    } catch (IOException | URISyntaxException e) {
+                        logger.log(Level.SEVERE, new ErrorReport().show(errors.getString("errorOpeningLink")), e);
 
-                            return;
-                        }
+                        return;
                     }
-                } catch (MalformedURLException e) {
-                    logger.log(Level.SEVERE, new ErrorReport().show(errors.getString("errorOpeningLink")), e);
-                    return;
                 }
+            } catch (MalformedURLException e) {
+                logger.log(Level.SEVERE, new ErrorReport().show(errors.getString("errorOpeningLink")), e);
                 return;
             }
+            return;
         }
 
         fileChooser = new JFileChooser();
@@ -1911,7 +1910,6 @@ public class Easytranscript extends javax.swing.JFrame {
                         JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
                 if (response == JOptionPane.NO_OPTION) {
                     MainexportTransMenuitemActionPerformed(evt);
-                } else if (response == JOptionPane.YES_OPTION) {
                 } else if (response == JOptionPane.CLOSED_OPTION) {
                     MainexportTransMenuitemActionPerformed(evt);
                 }
@@ -1939,7 +1937,7 @@ public class Easytranscript extends javax.swing.JFrame {
                 new File(opFolder + "ext/Pandoc/tmp.rtf").delete();
                 TranscriptHandler.exportRTF(opFolder + "ext/Pandoc/tmp.rtf");
                 try (Writer out = new BufferedWriter(new OutputStreamWriter(
-                        new FileOutputStream(opFolder + "ext/Pandoc/in.html"), "UTF-8"))) {
+                        new FileOutputStream(opFolder + "ext/Pandoc/in.html"), StandardCharsets.UTF_8))) {
                     JEditorPane p = new JEditorPane();
                     p.setContentType("text/rtf");
                     p.setEditorKit((EditorKit) MainCenterEditorEditorPane.getEditorKit().clone());
@@ -2052,7 +2050,7 @@ public class Easytranscript extends javax.swing.JFrame {
     }//GEN-LAST:event_MainToolbarCheckUpdatesButtonActionPerformed
 
     private void MainsupportMenuitemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainsupportMenuitemActionPerformed
-        if (supportFrame.isVisible() == false) {
+        if (!supportFrame.isVisible()) {
             supportFrame.getSupportFailureCheckbox().setSelected(false);
             supportFrame.getSupportFeatureCheckbox().setSelected(false);
             supportFrame.getSupportQuestionCheckbox().setSelected(false);
@@ -2096,7 +2094,6 @@ public class Easytranscript extends javax.swing.JFrame {
             if (response == JOptionPane.NO_OPTION) {
                 this.MainduplicateTransMenuitemActionPerformed(evt);
 
-            } else if (response == JOptionPane.YES_OPTION) {
             } else if (response == JOptionPane.CLOSED_OPTION) {
                 this.MainduplicateTransMenuitemActionPerformed(evt);
             }
@@ -2156,7 +2153,7 @@ public class Easytranscript extends javax.swing.JFrame {
     }//GEN-LAST:event_MaincloseProjectMenuitemActionPerformed
 
     private void MainprojExportMenuitemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainprojExportMenuitemActionPerformed
-        if (exportFrame.isVisible() == false) {
+        if (!exportFrame.isVisible()) {
             exportFrame.getExportexportButton().setEnabled(true);
             exportFrame.getExportCancelButton().setEnabled(true);
             exportFrame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
@@ -2517,7 +2514,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
     private void MainTimePlayerplayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainTimePlayerplayButtonActionPerformed
         if (!useFXPlayer) {
-            if (player.isMediaLoaded() == true) {
+            if (player.isMediaLoaded()) {
                 player.togglePaused();
             }
         } else {
@@ -2785,12 +2782,12 @@ public class Easytranscript extends javax.swing.JFrame {
                 return;
             }
 
-            if (player.isMediaLoaded() == false) {
+            if (!player.isMediaLoaded()) {
                 MainCenterSplitpane.setDividerLocation(0);
 
                 MainCenterSplitpane.setEnabled(false);
 
-            } else if (player.isMediaLoaded() == true) {
+            } else if (player.isMediaLoaded()) {
 
                 boolean audio = false;
                 for (String audioformate1 : audioformate) {
@@ -2873,11 +2870,12 @@ public class Easytranscript extends javax.swing.JFrame {
             public synchronized void drop(DropTargetDropEvent evt) {
                 try {
                     evt.acceptDrop(DnDConstants.ACTION_COPY);
+
                     List<File> droppedFiles = (List<File>) evt
                             .getTransferable().getTransferData(
                                     DataFlavor.javaFileListFlavor);
                     if (droppedFiles.get(0).getAbsolutePath().endsWith(".etp")) {
-                        if (TranscriptHandler.isUnsaved() == true) {
+                        if (TranscriptHandler.isUnsaved()) {
 
                             Object[] options = {messages.getString("Ja"),
                                 messages.getString("Nein"),
@@ -2930,7 +2928,7 @@ public class Easytranscript extends javax.swing.JFrame {
                             .getTransferable().getTransferData(
                                     DataFlavor.javaFileListFlavor);
                     if (droppedFiles.get(0).getAbsolutePath().endsWith(".etp")) {
-                        if (TranscriptHandler.isUnsaved() == true) {
+                        if (TranscriptHandler.isUnsaved()) {
 
                             Object[] options = {messages.getString("Ja"),
                                 messages.getString("Nein"),
@@ -3114,7 +3112,7 @@ public class Easytranscript extends javax.swing.JFrame {
                         MainCenterEditorEditorPane.getDocument().remove(MainCenterEditorEditorPane.getSelectionStart(), MainCenterEditorEditorPane.getSelectedText().length());
                         MainCenterEditorEditorPane.setCaretPosition(caret);
 
-                    } else if (orientationRT == true) {
+                    } else if (orientationRT) {
                         MainCenterEditorEditorPane.getDocument().remove(MainCenterEditorEditorPane.getCaretPosition() - 1, 1);
                     } else {
                         int caret = MainCenterEditorEditorPane.getCaretPosition();
@@ -3142,7 +3140,7 @@ public class Easytranscript extends javax.swing.JFrame {
                         MainCenterEditorEditorPane.setCaretPosition(caret);
                     } else {
                         String hash;
-                        if (orientationRT != true) {
+                        if (!orientationRT) {
                             hash = MainCenterEditorEditorPane.getDocument().getText(MainCenterEditorEditorPane.getCaretPosition() - 1, 1);
                         } else {
                             hash = MainCenterEditorEditorPane.getDocument().getText(MainCenterEditorEditorPane.getCaretPosition(), 1);
@@ -3151,7 +3149,7 @@ public class Easytranscript extends javax.swing.JFrame {
                             int caret = MainCenterEditorEditorPane.getCaretPosition() - 12;
                             MainCenterEditorEditorPane.getDocument().remove(MainCenterEditorEditorPane.getCaretPosition() - 12, 12);
                             MainCenterEditorEditorPane.setCaretPosition(caret);
-                        } else if (orientationRT == true) {
+                        } else if (orientationRT) {
                             MainCenterEditorEditorPane.getDocument().remove(MainCenterEditorEditorPane.getCaretPosition(), 1);
                         } else {
                             int caret = MainCenterEditorEditorPane.getCaretPosition() - 1;
@@ -3182,7 +3180,7 @@ public class Easytranscript extends javax.swing.JFrame {
                 public void actionPerformed(ActionEvent e) {
                     try {
                         SimpleAttributeSet attributes = new SimpleAttributeSet();
-                        if (prop.getBoolProperty("TextbausteineFett") == true) {
+                        if (prop.getBoolProperty("TextbausteineFett")) {
                             StyleConstants.setBold(attributes, true);
                         }
                         StyleConstants.setFontSize(attributes, Integer.parseInt(MainToolbarFontsizeCombobox.getSelectedItem().toString().replaceAll(" ", "")));
@@ -3191,31 +3189,26 @@ public class Easytranscript extends javax.swing.JFrame {
 
                         MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), txtbs1, attributes);
 
-                        if (prop.getBoolProperty("TextbausteineFett") == true) {
+                        if (prop.getBoolProperty("TextbausteineFett")) {
                             new StyledEditorKit.BoldAction().actionPerformed(null);
                         }
 
-                    } catch (BadLocationException ex) {
+                    } catch (BadLocationException ignored) {
                     }
 
                 }
             });
         }
 
-        if (prop.getBoolProperty("ConfigPlayerSystemWideCheckbox")) {
-            //loadSystemWideHotkeysLibraries();
-        }
-        //} else {
         MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F4, 0, true), "PausePlaying");
         MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F5, 0), "vorspulen");
         MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F3, 0), "zuruckspulen");
-        //}
 
-      //  if (!prop.getBoolProperty("ConfigPlayerSystemWideCheckbox")) {
             MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F4, 0, true), "PausePlaying");
             MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F5, 0), "vorspulen");
             MainCenterEditorEditorPane.getInputMap(JEditorPane.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_F3, 0), "zuruckspulen");
-       /* } else {
+
+            /*
 
             if (getOS().equals("Win")) {
 
@@ -3268,7 +3261,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
             if (prop.getBoolProperty("ZeitmarkenActive")) {
 
-                if (prop.getBoolProperty("zeitmarkeBeginning") == false || prop.getBoolProperty("zeitmarkeEnding") == true) {
+                if (!prop.getBoolProperty("zeitmarkeBeginning") || prop.getBoolProperty("zeitmarkeEnding")) {
 
                     MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(),
                             " #" + StundenC_string + ":" + MinutenC_string + ":" + SekundenC_string + "-" + Millisekunden_current + "# ", null);
@@ -3282,38 +3275,38 @@ public class Easytranscript extends javax.swing.JFrame {
                 MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), "\n", null);
             }
 
-            if (prop.getBoolProperty("ZeitmarkenActive") && prop.getBoolProperty("zeitmarkeBeginning") == true) {
+            if (prop.getBoolProperty("ZeitmarkenActive") && prop.getBoolProperty("zeitmarkeBeginning")) {
 
-                if (MainCenterEditorEditorPane.getDocument().getText(0, MainCenterEditorEditorPane.getDocument().getLength()).trim().isEmpty() == false) {
+                if (!MainCenterEditorEditorPane.getDocument().getText(0, MainCenterEditorEditorPane.getDocument().getLength()).trim().isEmpty()) {
 
                     MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(),
                             " #" + StundenC_string + ":" + MinutenC_string + ":" + SekundenC_string + "-" + Millisekunden_current + "# ", null);
                 }
             }
 
-            if (prop.getBoolProperty("Sprecherwechsel") == true) {
+            if (prop.getBoolProperty("Sprecherwechsel")) {
 
                 String text = MainCenterEditorEditorPane.getDocument().getText(0, MainCenterEditorEditorPane.getCaretPosition());
                 int ind1 = text.lastIndexOf(prop.getStringProperty("SprecherwechselP1"));
                 int ind2 = text.lastIndexOf(prop.getStringProperty("SprecherwechselP2"));
-                SprecherwechselWechsel = ind2 > ind1 || ind2 == ind1;
+                sprecherwechselWechsel = ind2 > ind1 || ind2 == ind1;
 
-                if (SprecherwechselWechsel == true) {
-                    if (prop.getBoolProperty("COSFett") == true) {
+                if (sprecherwechselWechsel) {
+                    if (prop.getBoolProperty("COSFett")) {
                         MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), prop.getStringProperty("SprecherwechselP1"), attributeBold);
                         MainToolbarBoldButton.getActionListeners()[0].actionPerformed(null);
                         MainCenterEditorEditorPaneCaretUpdate(null);
                     }
-                    if (prop.getBoolProperty("COSFett") == false) {
+                    if (!prop.getBoolProperty("COSFett")) {
                         MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), prop.getStringProperty("SprecherwechselP1"), null);
                     }
                 } else {
-                    if (prop.getBoolProperty("COSFett") == true) {
+                    if (prop.getBoolProperty("COSFett")) {
                         MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), prop.getStringProperty("SprecherwechselP2"), attributeBold);
                         MainToolbarBoldButton.getActionListeners()[0].actionPerformed(null);
                         MainCenterEditorEditorPaneCaretUpdate(null);
                     }
-                    if (prop.getBoolProperty("COSFett") == false) {
+                    if (!prop.getBoolProperty("COSFett")) {
                         MainCenterEditorEditorPane.getDocument().insertString(MainCenterEditorEditorPane.getCaretPosition(), prop.getStringProperty("SprecherwechselP2"), null);
                     }
                 }
@@ -3447,7 +3440,7 @@ public class Easytranscript extends javax.swing.JFrame {
     }
 
     private static Void _terminateAfter(){
-        if (workTime.getRecordingTime() == true) {
+        if (workTime.getRecordingTime()) {
 
             try {
                 workTime.endCurrentWorkTimeEntry();
@@ -3462,14 +3455,8 @@ public class Easytranscript extends javax.swing.JFrame {
             logHandler.close();
         }
 
-        if (SystemWideKeyWasActive == 1) {
-            /*try {
-                //JIntellitype.getInstance().cleanUp();
-            } catch (Exception e) {
-                logger.log(Level.SEVERE, "Fehler beim Aufräumen von JIntellitype.", e);
-            }
-          */
-        } else if (SystemWideKeyWasActive == 2) {
+
+        if (SystemWideKeyWasActive == 2) {
             try {
                 JXGrabKey.getInstance().unregisterHotKey(0);
 
@@ -3492,7 +3479,7 @@ public class Easytranscript extends javax.swing.JFrame {
      * Sucht nach VLC und fordert, falls nicht gefunden den Benutzer auf, den
      * Pfad zur VLC Installation anzugeben.
      */
-    public final void detectVLC() {
+    private void detectVLC() {
 
         logger.log(Level.INFO, "detect VLC");
 
@@ -3530,7 +3517,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
             int n = JOptionPane.showOptionDialog(null,
                     messages.getString("VLCmessage3") + bit + " " + messages.getString("VLCmessage4") + " " + bit + " " + messages.getString("VLCmessage5"), messages.getString("VLCmessage2"),
-                    JOptionPane.PLAIN_MESSAGE,
+                    JOptionPane.DEFAULT_OPTION,
                     JOptionPane.INFORMATION_MESSAGE,
                     new ImageIcon(Easytranscript.class
                             .getResource("Images/VLC_Icon.png")),
@@ -3613,7 +3600,7 @@ public class Easytranscript extends javax.swing.JFrame {
                 }
                 return;
             } else if (n == 2) {
-                if (fxSupported == false) {
+                if (!fxSupported) {
                     JOptionPane.showMessageDialog(null, messages.getString("fxNotSupported"), messages.getString("Error"), JOptionPane.ERROR_MESSAGE);
                     detectVLC();
                 } else {
@@ -3623,8 +3610,7 @@ public class Easytranscript extends javax.swing.JFrame {
                 System.exit(0);
             }
 
-            if (ruckgabe != JFileChooser.APPROVE_OPTION || n
-                    == -1) {
+            if (ruckgabe != JFileChooser.APPROVE_OPTION) {
                 detectVLC();
 
             }
@@ -3648,22 +3634,22 @@ public class Easytranscript extends javax.swing.JFrame {
 
     }
 
-    protected static void insertSpecs(DefaultStyledDocument doc, int offset, DefaultStyledDocument.ElementSpec[] specs) {
+    private static void insertSpecs(DefaultStyledDocument doc, int offset, DefaultStyledDocument.ElementSpec[] specs) {
         try {
 //            doc.insert(0, specs);  method is protected so we have to
             //extend document or use such a hack
             Method m = DefaultStyledDocument.class
-                    .getDeclaredMethod("insert", new Class[]{int.class, DefaultStyledDocument.ElementSpec[].class});
+                    .getDeclaredMethod("insert", int.class, DefaultStyledDocument.ElementSpec[].class);
             m.setAccessible(true);
 
-            m.invoke(doc, new Object[]{offset, specs});
+            m.invoke(doc, offset, specs);
 
         } catch (IllegalAccessException | IllegalArgumentException | NoSuchMethodException | SecurityException | InvocationTargetException e) {
             logger.log(Level.WARNING, "insertSpecs Error", e);
         }
     }
 
-    protected static void fillSpecs(Element elem, ArrayList<DefaultStyledDocument.ElementSpec> specs, boolean includeRoot) throws BadLocationException {
+    private static void fillSpecs(Element elem, ArrayList<DefaultStyledDocument.ElementSpec> specs, boolean includeRoot) throws BadLocationException {
         DefaultStyledDocument.ElementSpec spec;
         if (elem.isLeaf()) {
             String str = elem.getDocument().getText(elem.getStartOffset(), elem.getEndOffset() - elem.getStartOffset());
@@ -3839,7 +3825,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
     }
 
-    public JFrame getStartFrame() {
+    JFrame getStartFrame() {
         return startFrame;
     }
 
@@ -3879,7 +3865,7 @@ public class Easytranscript extends javax.swing.JFrame {
         });
     }
 
-    public void updateVideoRatioFX() {
+    private void updateVideoRatioFX() {
         if (PlayerFX.getMediaViewFX() != null && PlayerFX.getMedia() != null && PlayerFX.getMediaPlayer() != null) {
             javafx.application.Platform.runLater(new Runnable() {
                 @Override
@@ -4044,7 +4030,7 @@ public class Easytranscript extends javax.swing.JFrame {
 
         JMenuItem item = new JMenuItem();
 
-        public RecentUsedAction(JMenuItem recItem) {
+        RecentUsedAction(JMenuItem recItem) {
             item = recItem;
         }
 

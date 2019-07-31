@@ -1,4 +1,4 @@
-/**
+/*
  *
  *
  * easytranscript Copyright (C) 2013 e-werkzeug
@@ -46,7 +46,7 @@ public class ErrorReport {
 
     private String email = "";
     private final ImageIcon error = new ImageIcon(Easytranscript.class.getResource("Images/dialog-error-7.png"));
-    String nachricht;
+    private String nachricht;
 
     /**
      * Zeigt eine Absturznachricht und die Java Exception an
@@ -59,12 +59,13 @@ public class ErrorReport {
         Object[] options = {"OK", messages.getString("send")};
 
         int n = JOptionPane.showOptionDialog(null,
-                "<html><h3> " + messages.getString("Error") + ": " + nachricht.replace("\n", " ") + "</h3></html>" + "\n\n"
+                "<html><h3> " + messages.getString("Error") + ": "
+                        + nachricht.replace("\n", " ") + "</h3></html>" + "\n\n"
                 + messages.getString("StatusMessage")
                 + " \"" + "log_" + new SimpleDateFormat("yyyy'-'MMM'-'W").format(new Date()) + ".xml\"\n"
                 + messages.getString("StatusMessage2") + opFolder + "Logs.",
                 messages.getString("ThatShouldNotHappen"),
-                JOptionPane.PLAIN_MESSAGE,
+                JOptionPane.DEFAULT_OPTION,
                 JOptionPane.INFORMATION_MESSAGE,
                 error,
                 options,
@@ -77,8 +78,7 @@ public class ErrorReport {
 
         }
 
-        if (n == 0) {
-        }
+
 
         return nachricht;
 
