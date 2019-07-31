@@ -87,3 +87,5 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+/launch4j.xml
+/out/
