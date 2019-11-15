@@ -102,7 +102,7 @@ public class ExportFrame extends javax.swing.JFrame {
         });
         ExportBottomPanel.add(ExportCancelButton);
 
-        ExportInfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
+        //ExportInfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
         ExportInfoTextarea.setColumns(20);
         ExportInfoTextarea.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         ExportInfoTextarea.setLineWrap(true);

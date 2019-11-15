@@ -86,7 +86,7 @@ public class SupportFrame extends javax.swing.JFrame {
         SupportTitleLabel.setText(bundle.getString("Easytranscript.SupportTitleLabel.text")); // NOI18N
 
         SupportInfoTextarea.setEditable(false);
-        SupportInfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
+       // SupportInfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
         SupportInfoTextarea.setColumns(20);
         SupportInfoTextarea.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         SupportInfoTextarea.setLineWrap(true);

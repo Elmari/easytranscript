@@ -80,14 +80,14 @@ public class StartFrame extends javax.swing.JFrame {
         setTitle("easytranscript");
         setResizable(false);
 
-        StartMainPanel.setBackground(new java.awt.Color(250, 250, 250));
+        //StartMainPanel.setBackground(new java.awt.Color(250, 250, 250));
         StartMainPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 StartMainPanelMouseClicked(evt);
             }
         });
 
-        StartMidPanel.setBackground(new java.awt.Color(250, 250, 250));
+        //StartMidPanel.setBackground(new java.awt.Color(250, 250, 250));
 
         StartcreateButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/de/ewerkzeug/easytranscript/Core/Images/document-new-6_big.png"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("de/ewerkzeug/easytranscript/Core/Bundles/Bundle"); // NOI18N
@@ -181,7 +181,7 @@ public class StartFrame extends javax.swing.JFrame {
             }
         });
 
-        StarthideCheckbox.setBackground(new java.awt.Color(250, 250, 250));
+      //  StarthideCheckbox.setBackground(new java.awt.Color(250, 250, 250));
         StarthideCheckbox.setText(bundle.getString("Easytranscript.StarthideCheckbox.text")); // NOI18N
         StarthideCheckbox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

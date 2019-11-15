@@ -110,7 +110,7 @@ public class UpdateFrame extends javax.swing.JFrame {
         UFheaderLabel.setText(bundle.getString("Easytranscript.UFheaderLabel.text")); // NOI18N
 
         UFinfoTextarea.setEditable(false);
-        UFinfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
+       // UFinfoTextarea.setBackground(new java.awt.Color(240, 240, 240));
         UFinfoTextarea.setColumns(20);
         UFinfoTextarea.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         UFinfoTextarea.setLineWrap(true);

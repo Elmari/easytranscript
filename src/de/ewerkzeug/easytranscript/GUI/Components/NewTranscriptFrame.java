@@ -523,7 +523,7 @@ public class NewTranscriptFrame extends javax.swing.JFrame {
         NPconclusionTitleLabel.setText(bundle.getString("Easytranscript.NPconclusionTitleLabel.text")); // NOI18N
 
         NPconclusionInfoTextfield.setEditable(false);
-        NPconclusionInfoTextfield.setBackground(new java.awt.Color(240, 240, 240));
+      //  NPconclusionInfoTextfield.setBackground(new java.awt.Color(240, 240, 240));
         NPconclusionInfoTextfield.setColumns(20);
         NPconclusionInfoTextfield.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         NPconclusionInfoTextfield.setLineWrap(true);

@@ -445,7 +445,7 @@ public class ConfigFrame extends javax.swing.JFrame {
         ConfigUseFXPLayerCheckbox.setText(bundle.getString("javaFXPlayerCheckbox")); // NOI18N
 
         ConfigUseFXPlayerTextArea.setEditable(false);
-        ConfigUseFXPlayerTextArea.setBackground(new java.awt.Color(240, 240, 240));
+       // ConfigUseFXPlayerTextArea.setBackground(new java.awt.Color(240, 240, 240));
         ConfigUseFXPlayerTextArea.setColumns(20);
         ConfigUseFXPlayerTextArea.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ConfigUseFXPlayerTextArea.setLineWrap(true);
@@ -907,7 +907,7 @@ public class ConfigFrame extends javax.swing.JFrame {
         ConfigOPScrollPane.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         ConfigOPTextArea.setEditable(false);
-        ConfigOPTextArea.setBackground(new java.awt.Color(240, 240, 240));
+      //  ConfigOPTextArea.setBackground(new java.awt.Color(240, 240, 240));
         ConfigOPTextArea.setColumns(20);
         ConfigOPTextArea.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         ConfigOPTextArea.setLineWrap(true);

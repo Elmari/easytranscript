@@ -113,7 +113,7 @@ public class TunerDialog extends javax.swing.JDialog {
             }
         });
 
-        TunerPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+     //   TunerPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         TunerrateSlider.setMaximum(200);
         TunerrateSlider.setValue(100);

@@ -20,6 +20,7 @@
 package de.ewerkzeug.easytranscript.GUI.Misc;
 
 import javax.swing.JEditorPane;
+import java.awt.*;
 
 /**
  * Verhindert Grafikfehler
@@ -31,4 +32,6 @@ public class ExtendedEditorPane extends JEditorPane {
     public void repaint(int x, int y, int width, int height) {
         super.repaint(0, 0, getWidth(), getHeight());
     }
+
+
 }

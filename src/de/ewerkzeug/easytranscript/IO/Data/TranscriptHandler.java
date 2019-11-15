@@ -28,6 +28,7 @@ import javax.swing.*;
 import javax.swing.event.DocumentListener;
 import javax.swing.text.*;
 import javax.swing.text.rtf.RTFEditorKit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -93,10 +94,20 @@ public class TranscriptHandler {
                 easytranscript.getMainCenterEditorEditorPane().setFont(new java.awt.Font("Arial", 0, 12 + V.performanceModeFontSizeIncrease));
             }
 
+            Color color = Color.BLACK;
+            if (highContrast!=null && highContrast) {
+                color = Color.WHITE;
+            }
+
+            easytranscript.getMainCenterEditorEditorPane().setForeground(color);
+            SimpleAttributeSet simpleAttributeSet = new SimpleAttributeSet();
+            StyleConstants.setForeground(simpleAttributeSet, color);
+            ((StyledDocument) easytranscript.getMainCenterEditorEditorPane().getDocument()).setCharacterAttributes(
+                    0, easytranscript.getMainCenterEditorEditorPane().getDocument().getLength(), simpleAttributeSet, false);
+
             undoManager.discardAllEdits();
             easytranscript.getMainCenterEditorEditorPane().getDocument().removeUndoableEditListener(undoManager);
             easytranscript.getMainCenterEditorEditorPane().getDocument().addUndoableEditListener(undoManager);
-
             unsaved = false;
             backupNeeded = false;
 

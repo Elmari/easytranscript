@@ -85,7 +85,7 @@ public class printDocument extends SwingWorker<String, Void> {
         label2.setHorizontalAlignment(JLabel.CENTER);
         frame.getContentPane().add(label, BorderLayout.CENTER);
         frame.getContentPane().add(label2, BorderLayout.SOUTH);
-        frame.getContentPane().setBackground(new Color(245, 245, 245));
+       // frame.getContentPane().setBackground(new Color(245, 245, 245));
 
         frame.pack();
         frame.setResizable(false);

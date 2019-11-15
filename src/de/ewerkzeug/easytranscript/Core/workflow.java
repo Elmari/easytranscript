@@ -17,34 +17,23 @@
  */
 package de.ewerkzeug.easytranscript.Core;
 
-import static de.ewerkzeug.easytranscript.Core.V.easytranscript;
-import static de.ewerkzeug.easytranscript.Core.V.messages;
-import static de.ewerkzeug.easytranscript.Core.V.news;
-import static de.ewerkzeug.easytranscript.Core.V.opFolder;
-import static de.ewerkzeug.easytranscript.Core.V.projFolder;
-import static de.ewerkzeug.easytranscript.Core.V.prop;
-import static de.ewerkzeug.easytranscript.Core.V.startFrame;
-import static de.ewerkzeug.easytranscript.Core.V.updateFrame;
 import de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler;
-import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
-import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
 import de.ewerkzeug.easytranscript.Tools.lock;
+import org.apache.commons.vfs.*;
+import org.apache.commons.vfs.impl.DefaultFileMonitor;
+
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import javax.swing.UnsupportedLookAndFeelException;
-import org.apache.commons.vfs.FileChangeEvent;
-import org.apache.commons.vfs.FileListener;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileSystemException;
-import org.apache.commons.vfs.FileSystemManager;
-import org.apache.commons.vfs.VFS;
-import org.apache.commons.vfs.impl.DefaultFileMonitor;
+
+import static de.ewerkzeug.easytranscript.Core.V.*;
+import static de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler.transcriptPath;
+import static de.ewerkzeug.easytranscript.Tools.Tools.readFileLineByLine;
 
 /**
- *
  * @author e-werkzeug <administrator@e-werkzeug.eu>
  */
 public class workflow {
@@ -65,15 +54,40 @@ public class workflow {
 
         Locale.setDefault(locale);
 
+        if (V.highContrast != null && V.highContrast) {
+            UIManager.put("text", new Color(255, 255, 255));
+            UIManager.put("ToolTip.background", new Color(0, 0, 0));
+            UIManager.put("control", new Color(0, 0, 0));
+            UIManager.put("info", new Color(0, 0, 0));
+            UIManager.put("nimbusBase", new Color(0, 0, 0));
+            UIManager.put("nimbusAlertYellow", new Color(255, 255, 0));
+            UIManager.put("nimbusDisabledText", new Color(66, 242, 63));
+            UIManager.put("nimbusFocus", new Color(115, 164, 209));
+            UIManager.put("nimbusGreen", new Color(0, 255, 0));
+            UIManager.put("nimbusInfoBlue", new Color(100, 242, 255));
+            UIManager.put("nimbusLightBackground", new Color(0, 0, 0));
+            UIManager.put("nimbusOrange", new Color(255, 132, 5));
+            UIManager.put("nimbusRed", new Color(255, 0, 0));
+            UIManager.put("nimbusSelectedText", new Color(0, 0, 0));
+            UIManager.put("background", new Color(0, 0, 0));
+            UIManager.put("Menu.background", new Color(0, 0, 0));
+            UIManager.put("PopupMenu.background", new Color(0, 0, 0));
+            UIManager.put("nimbusSelectionBackground", new Color(26, 235, 255));
+            UIManager.put("controlText", new Color(255, 255, 255));
+            UIManager.put("menuText", new Color(255, 255, 255));
+            UIManager.put("infoText", new Color(255, 255, 255));
+            UIManager.put("CheckBox.foreground", Color.WHITE);
+        }
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
+
                     break;
 
                 }
@@ -82,7 +96,28 @@ public class workflow {
             java.util.logging.Logger.getLogger(Easytranscript.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-
+        if (V.highContrast != null && V.highContrast) {
+            UIManager.getLookAndFeelDefaults().put(
+                    "MenuItem[Enabled].textForeground", Color.WHITE);
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu[Enabled].textForeground", Color.WHITE);
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu.foreground", Color.WHITE);
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu.background", Color.BLACK);
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu.disabledText", new Color(66, 242, 63));
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu.disabled", new Color(66, 242, 63));
+            UIManager.getLookAndFeelDefaults().put(
+                    "Menu[Disabled].textForeground", new Color(66, 242, 63));
+            UIManager.getLookAndFeelDefaults().put(
+                    "MenuBar:Menu[Enabled].textForeground", Color.WHITE);
+            UIManager.getLookAndFeelDefaults().put(
+                    "MenuBar.background", Color.BLACK);
+            UIManager.getLookAndFeelDefaults().put(
+                    "MenuBar[Enabled].backgroundPainter", (Painter<Component>) (g, object, width, height) -> g.setBackground(Color.BLACK));
+        }
         try {
 
             lock l = new lock(projectToBeLoaded2);

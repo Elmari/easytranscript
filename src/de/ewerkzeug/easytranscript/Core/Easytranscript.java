@@ -66,11 +66,8 @@ import static de.ewerkzeug.easytranscript.Tools.Tools.checkOp;
 import static de.ewerkzeug.easytranscript.Tools.Tools.deleteFilesWithExtension;
 import static de.ewerkzeug.easytranscript.Tools.Tools.getOS;
 import de.ewerkzeug.easytranscript.Tools.UpdateChecker;
-import java.awt.Desktop;
-import java.awt.Dimension;
-import java.awt.Event;
-import java.awt.MouseInfo;
-import java.awt.Toolkit;
+
+import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.dnd.DnDConstants;
@@ -144,16 +141,7 @@ import javax.swing.Timer;
 import javax.swing.ToolTipManager;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultStyledDocument;
-import javax.swing.text.EditorKit;
-import javax.swing.text.Element;
-import javax.swing.text.MutableAttributeSet;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
-import javax.swing.text.StyledEditorKit;
+import javax.swing.text.*;
 import javax.swing.text.html.MinimalHTMLWriter;
 import javax.swing.text.rtf.RTFEditorKit;
 import javax.swing.undo.CannotRedoException;
@@ -898,6 +886,8 @@ public class Easytranscript extends javax.swing.JFrame {
         });
         MainCenterEditorScrollpane.setViewportView(MainCenterEditorEditorPane);
 
+
+
         javax.swing.GroupLayout MainCenterEditorPanelLayout = new javax.swing.GroupLayout(MainCenterEditorPanel);
         MainCenterEditorPanel.setLayout(MainCenterEditorPanelLayout);
         MainCenterEditorPanelLayout.setHorizontalGroup(
@@ -1417,6 +1407,7 @@ public class Easytranscript extends javax.swing.JFrame {
         MainButtonPanel.setVisible(false);
 
         pack();
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void MainTimePlayerbackwButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainTimePlayerbackwButtonActionPerformed
@@ -1583,7 +1574,6 @@ public class Easytranscript extends javax.swing.JFrame {
         if (fontsizeHasFocus) {
             SimpleAttributeSet attrs = new SimpleAttributeSet();
             AttributeSet attr = ((StyledDocument) MainCenterEditorEditorPane.getDocument()).getCharacterElement(MainCenterEditorEditorPane.getSelectionStart()).getAttributes();
-
             try {
                 if (MainToolbarFontsizeCombobox.getSelectedItem() != null) {
                     if (!MainToolbarFontsizeCombobox.getSelectedItem().equals(" ")) {
@@ -2987,9 +2977,6 @@ public class Easytranscript extends javax.swing.JFrame {
         //  }
 
         StyledDocument doc = ((StyledDocument) MainCenterEditorEditorPane.getDocument());
-        MutableAttributeSet attr = new SimpleAttributeSet();
-
-        doc.setParagraphAttributes(0, doc.getLength() - 1, attr, false);
 
         Action PPAction = new AbstractAction() {
             @Override

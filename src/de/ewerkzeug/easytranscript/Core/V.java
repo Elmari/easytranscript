@@ -41,6 +41,8 @@ import de.ewerkzeug.easytranscript.IO.Data.RecentUsed;
 import de.ewerkzeug.easytranscript.IO.Data.StenoData;
 import de.ewerkzeug.easytranscript.IO.Data.WorkTime;
 import de.ewerkzeug.easytranscript.Tools.Player;
+
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -59,7 +61,7 @@ import javax.swing.undo.UndoManager;
 public class V {
 
     //#####################
-    public static final Version VERSION = new Version("2.51.2 Épice " + VersionState.FINAL);
+    public static final Version VERSION = new Version("2.51.3 Épice " + VersionState.FINAL);
     public static int UPDATECHANNEL = VersionState.getValue(VersionState.FINAL);
     public static String updVersion = "minor";
     //#####################
@@ -147,4 +149,7 @@ public class V {
     public static ChangeTranscriptFrame changeProjectFrame;
     public static ExportFrame exportFrame;
     static Easynews news;
+
+    static Toolkit toolkit = Toolkit.getDefaultToolkit();
+    public static Boolean highContrast = (Boolean)toolkit.getDesktopProperty( "win.highContrast.on" );
 }
