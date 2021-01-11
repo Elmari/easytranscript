@@ -26,13 +26,13 @@ import java.nio.channels.FileLock;
  *
  * @author Burhan Uddin (http://www.dscripts.net/2010/06/09/how-to-lock-a-process-in-java-to-prevent-multiple-instance-at-the-same-time/)
  */
-public class lock {
+public class Lock {
 
     private static File f;
     private static FileChannel channel;
     private static FileLock lock;
 
-    public lock(String path) {
+    public Lock(String path) {
         try {
             f = new File(System.getProperty("user.home") + System.getProperty("file.separator")+"process.lock");
             // Check if the lock exist

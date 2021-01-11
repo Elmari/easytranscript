@@ -18,7 +18,7 @@
 package de.ewerkzeug.easytranscript.Core;
 
 import de.ewerkzeug.easytranscript.IO.Data.TranscriptHandler;
-import de.ewerkzeug.easytranscript.Tools.lock;
+import de.ewerkzeug.easytranscript.Tools.Lock;
 import org.apache.commons.vfs.*;
 import org.apache.commons.vfs.impl.DefaultFileMonitor;
 
@@ -49,6 +49,7 @@ public class workflow {
         } else {
             projectToBeLoaded2 = "";
         }
+
 
         Locale locale = new Locale("en", "US");
 
@@ -83,6 +84,7 @@ public class workflow {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -96,6 +98,7 @@ public class workflow {
             java.util.logging.Logger.getLogger(Easytranscript.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+
         if (V.highContrast != null && V.highContrast) {
             UIManager.getLookAndFeelDefaults().put(
                     "MenuItem[Enabled].textForeground", Color.WHITE);
@@ -117,15 +120,6 @@ public class workflow {
                     "MenuBar.background", Color.BLACK);
             UIManager.getLookAndFeelDefaults().put(
                     "MenuBar[Enabled].backgroundPainter", (Painter<Component>) (g, object, width, height) -> g.setBackground(Color.BLACK));
-        }
-        try {
-
-            lock l = new lock(projectToBeLoaded2);
-
-        } catch (RuntimeException ex) {
-            // exit main app
-            javax.swing.JOptionPane.showMessageDialog(null, "Not enough permissions to execute easytranscript!");
-            return;
         }
 
         /* Create and display the form */
