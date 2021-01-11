@@ -1,6 +1,7 @@
 # easytranscript
 
 easy to use transcription-software with a variety of features: https://e-werkzeug.eu
+
 easytranscript is published under GPL 3.
 
 http://www.gnu.de/documents/gpl.de.html
