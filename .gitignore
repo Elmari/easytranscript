@@ -90,4 +90,4 @@ nbdist/
 /launch4j.xml
 out/
 /Logs/
-.idea/
+.idea/**
