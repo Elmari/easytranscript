@@ -19,7 +19,9 @@ To use easytranscript you need to have Java 8, 11 or higher installed. In additi
 # How to build
 
 You can build easytranscript with maven:
+
 ```mvn clean package```
+
 The file easytranscript-xxx-jar-with-dependencies.jar is the one you want to use.
 
 # Note regarding the development and quality of the code
