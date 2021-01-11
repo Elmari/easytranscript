@@ -8,5 +8,5 @@ Class-Path: mail.jar jfxrt.jar poi-3.10.jar jna-3.5.2.jar JXGrabKey.ja
  -mac.jar commons-collections4-4.0.jar ossupport-connector-common.jar 
  ossupport-connector-mac-osx32.jar commons-collections4-4.0-javadoc.ja
  r
-Main-Class: de.ewerkzeug.easytranscript.Core.workflow
+Main-Class: de.ewerkzeug.easytranscript.core.workflow
 

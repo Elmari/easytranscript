@@ -37,7 +37,7 @@ fabric.properties
 *.tar.gz
 *.rar
 hs_err_pid*
-src/de/ewerkzeug/easytranscript/Core/Images/Thumbs.db
+src/de/ewerkzeug/easytranscript/core/images/Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
 *.stackdump
