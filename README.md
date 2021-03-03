@@ -15,7 +15,7 @@ Libs and Symbols:
 
 # How to use
 
-To use easytranscript you need to have Java 8, 11 or higher installed. In addition, the VLC Player may be required to play other formats.
+To use easytranscript you need to have Java 11 or higher as well as JavaFX installed. In addition, the VLC Player may be required to play other formats.
 
 # How to build
 
