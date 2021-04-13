@@ -6,7 +6,7 @@
 
     <groupId>de.ewerkzeug</groupId>
     <artifactId>easytranscript</artifactId>
-    <version>2.51.4</version>
+    <version>2.51.5</version>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,6 +17,16 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
             <plugin>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
@@ -29,7 +39,8 @@
                         <configuration>
                             <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
                             <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>de.ewerkzeug.easytranscript.Workflow</mainClass>
                                 </transformer>
                             </transformers>
@@ -69,7 +80,6 @@
                     <version>${javafx.version}</version>
                     <classifier>linux</classifier>
                 </dependency>
-
 
 
                 <dependency>
