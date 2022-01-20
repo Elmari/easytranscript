@@ -549,9 +549,9 @@ public class TranscriptHandler {
             logger.log(Level.WARNING, "Projektdatenordner existiert bereits. Wird überschrieben.");
 
             try {
-                if (!useFXPlayer) {
+                if (!useFXPlayer && player != null && player.getMediaPlayer() != null) {
                     player.getMediaPlayer().stop();
-                } else {
+                } else if (PlayerFX.getMediaPlayer() != null){
                     PlayerFX.getMediaPlayer().pause();
                     PlayerFX.getMediaPlayer().stop();
                 }
